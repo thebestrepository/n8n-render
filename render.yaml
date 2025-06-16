@@ -35,6 +35,8 @@ services:
       # for the Render Postgres database defined below
       - key: DB_TYPE
         value: postgresdb
+      - key: N8N_TEMPLATES_ENABLED
+        value: false
       - key: DB_POSTGRESDB_DATABASE
         fromDatabase:
           name: n8n-db
